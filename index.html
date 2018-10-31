@@ -1,272 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="style/normalize.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://use.fontawesome.com/833e0f587b.js"></script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Hello, world!</title>
 </head>
+
 <body>
-    <header class="header">
-        <div class="container header-flex">
-        <div class="header-left">
-            <a class="logo" href="#">
-                <img class="logo-img" src="img/logo.png" alt="logo">BRAN<span class="logo-d">D</span>
-            </a>
-            <form class="header-form" action="#">
-                <details class="browse-dl">
-                    <summary class="browse-summary">browse</summary>
-                    <div class="browse-content">
-                        <a class="browse-name" href="#"><h3 class="drop-heading browse-heading">Women</h3></a>
-                        <ul class="browse-list browse-mgb">
-                            <li><a class="browse-link" href="#">Dresses</a></li>
-                            <li><a class="browse-link" href="#">Tops</a></li>
-                            <li><a class="browse-link" href="#">Sweaters/Knits</a></li>
-                            <li><a class="browse-link" href="#">Jackets/Coats</a></li>
-                            <li><a class="browse-link" href="#">Blazers</a></li>
-                            <li><a class="browse-link" href="#">Denim</a></li>
-                            <li><a class="browse-link" href="#">Leggings/Pants</a></li>
-                            <li><a class="browse-link" href="#">Skirts/Shorts</a></li>
-                            <li><a class="browse-link" href="#">Accessories </a></li>
-                            <li><a class="browse-link" href="#">Bags/Purses</a></li>
-                            <li><a class="browse-link" href="#">Swimwear/Underwear</a></li>
-                            <li><a class="browse-link" href="#">Nightwear</a></li>
-                            <li><a class="browse-link" href="#">Shoes</a></li>
-                            <li><a class="browse-link" href="#">Beauty</a>    </li>
-                        </ul>  
-                        <a class="browse-name " href="#"><h3 class="drop-heading browse-heading">Men</h3></a>
-                        <ul class="browse-list">
-                            <li><a class="browse-link" href="#">Tees/Tank tops</a></li>
-                            <li><a class="browse-link" href="#">Shirts/Polos</a></li>
-                            <li><a class="browse-link" href="#">Sweaters</a></li>
-                            <li><a class="browse-link" href="#">Sweatshirts/Hoodies</a></li>
-                            <li><a class="browse-link" href="#">Blazers</a></li>
-                            <li><a class="browse-link" href="#">Jackets/vests</a></li>
-                        </ul>  
-                    </div>
-                </details>
-                <input class="browse-input" type="text" placeholder="Search for Item...">
-                <button class="browse-btn" type="submit"><span class="fa fa-search" aria-hidden="true"></span></button>
-            </form>    
-        </div>
-        <div class="header-right">
-           <a class="cart-link" href="#"><img class="cart-img" src="img/cart.svg" alt="cart" width="32" height="29"></a>
-           <a class="button" href="#">My Account</a>       
-        </div>    
-        </div>
-    </header>
-    <nav class="nav">
-        <div class="container">
-            <ul class="menu-list">
-                <li class="menu-item"><a class="menu-link" href="#">Home</a></li>
-                <li class="menu-item">
-                    <a class="menu-link" href="#">Man</a>
-                    <div class="drop-box">
-                       <div class="drip-flex">
-                           <h3 class="drop-heading">Women</h3>
-                           <ul class="drop-list">
-                                <li><a href="#" class="drop-link">Dresses</a></li>
-                                <li><a href="#" class="drop-link">Tops</a></li>
-                                <li><a href="#" class="drop-link">Sweaters/Knits</a></li>
-                                <li><a href="#" class="drop-link">Jackets/Coats</a></li>
-                                <li><a href="#" class="drop-link">Blazers</a></li>
-                                <li><a href="#" class="drop-link">Denim</a></li>
-                                <li><a href="#" class="drop-link">Leggings/Pants</a></li>
-                                <li><a href="#" class="drop-link">Skirts/Shorts</a></li>
-                                <li><a href="#" class="drop-link">Accessories</a></li>
-                           </ul>
-                       </div>
-                    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand" href="#">Суши</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"> <a class="nav-link" href="#">Можно <span class="sr-only">(current)</span></a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#">Сделать</a> </li>
+                <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Дома
+        </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="#">Это дешевле </a> <a class="dropdown-item" href="#">А можно...</a>
+                        <div class="dropdown-divider"></div> <a class="dropdown-item" href="#">и не дома</a> </div>
                 </li>
-                <li class="menu-item"><a class="menu-link" href="#">Women</a></li>
-                <li class="menu-item"><a class="menu-link" href="#">Kids</a></li>
-                <li class="menu-item"><a class="menu-link" href="#">Accoseriese</a></li>
-                <li class="menu-item"><a class="menu-link" href="#">Featured</a></li>
-                <li class="menu-item"><a class="menu-link" href="#">Hot Deals</a></li>
+                <li class="nav-item"> <a class="nav-link disabled" href="#">Disabled</a> </li>
             </ul>
-        </div>
-    </nav>
-    <section class="banner">
-        <div class="container banner-back">
-            <div class="banner-text">
-                <p class="the-brand">THE BRAND</p>
-                <p class="fashion">OF LUXERIOUS <span class="fashion-span">FASHION</span></p>
-            </div>
-        </div>
-    </section>
-    <section class="product-categories container">
-        <ul class="category-list">
-            <li class="category-item for-men">
-                <a class="category-link" href="#">hot&nbsp;deal <span class="category-span">for&nbsp;men</span></a>
-            </li>
-            <li class="category-item accesories">
-                <a class="category-link" href="#">luxirous&nbsp;&&nbsp;trendy <span class="category-span">accesories</span></a>
-            </li>
-            <li class="category-item women">
-                <a class="category-link" href="#">30%&nbsp;offer <span class="category-span">women</span></a>
-            </li>
-            <li class="category-item for-kids">
-                <a class="category-link" href="#">new&nbsp;arrivals <span class="category-span">for&nbsp;kids</span></a>
-            </li>
-        </ul>    
-    </section>
-    <section class="products">
-        <h3 class="heading-items">Fetured Items</h3>
-        <p class="featured-text">Shop for items based on what we featured in this week</p>
-        <div class="box-product container">
-            <div class="item-product">
-                <a href="#" class="product-link">
-                    <img class="product-img" src="img/prod-1.jpg" alt="product-1">
-                    <div class="product-text">
-                        <p class="product-name">Mango  People  T-shirt</p>
-                        <p class="product-price">$52.00</p>
-                    </div>
-                </a>  
-                <div class="parent-add">
-                    <a class="add" href="#">Add to Cart</a>  
-                </div>
-            </div>
-            <div class="item-product">
-                <a href="#" class="product-link">
-                    <img class="product-img" src="img/prod-2.jpg" alt="product-1">
-                    <div class="product-text">
-                        <p class="product-name">Mango  People  T-shirt</p>
-                        <p class="product-price">$52.00</p>
-                    </div>
-                </a>  
-                <div class="parent-add">
-                    <a class="add" href="#">Add to Cart</a>  
-                </div>
-            </div>
-            <div class="item-product">
-                <a href="#" class="product-link">
-                    <img class="product-img" src="img/prod-3.jpg" alt="product-1">
-                    <div class="product-text">
-                        <p class="product-name">Mango  People  T-shirt</p>
-                        <p class="product-price">$52.00</p>
-                    </div>
-                </a>  
-                <div class="parent-add">
-                    <a class="add" href="#">Add to Cart</a>  
-                </div>
-            </div>
-            <div class="item-product">
-                <a href="#" class="product-link">
-                    <img class="product-img" src="img/prod-4.jpg" alt="product-1">
-                    <div class="product-text">
-                        <p class="product-name">Mango  People  T-shirt</p>
-                        <p class="product-price">$52.00</p>
-                    </div>
-                </a>  
-                <div class="parent-add">
-                    <a class="add" href="#">Add to Cart</a>  
-                </div>
-            </div>
-            <div class="item-product">
-                <a href="#" class="product-link">
-                    <img class="product-img" src="img/prod-5.jpg" alt="product-1">
-                    <div class="product-text">
-                        <p class="product-name">Mango  People  T-shirt</p>
-                        <p class="product-price">$52.00</p>
-                    </div>
-                </a>  
-                <div class="parent-add">
-                    <a class="add" href="#">Add to Cart</a>  
-                </div>
-            </div>
-            <div class="item-product">
-                <a href="#" class="product-link">
-                    <img class="product-img" src="img/prod-6.jpg" alt="product-1">
-                    <div class="product-text">
-                        <p class="product-name">Mango  People  T-shirt</p>
-                        <p class="product-price">$52.00</p>
-                    </div>
-                </a>  
-                <div class="parent-add">
-                    <a class="add" href="#">Add to Cart</a>  
-                </div>
-            </div>
-            <div class="item-product">
-                <a href="#" class="product-link">
-                    <img class="product-img" src="img/prod-7.jpg" alt="product-1">
-                    <div class="product-text">
-                        <p class="product-name">Mango  People  T-shirt</p>
-                        <p class="product-price">$52.00</p>
-                    </div>
-                </a>  
-                <div class="parent-add">
-                    <a class="add" href="#">Add to Cart</a>  
-                </div>
-            </div>
-            <div class="item-product">
-                <a href="#" class=product-link>
-                    <img class="product-img" src="img/prod-8.jpg" alt="product-1">
-                    <div class="product-text">
-                        <p class="product-name">Mango  People  T-shirt</p>
-                        <p class="product-price">$52.00</p>
-                    </div>
-                </a>  
-                <div class="parent-add">
-                    <a class="add" href="#">Add to Cart</a>  
-                </div>
-            </div>
-        </div>
-        <a class="button btn-product" href="#">Browse All Product</a>    
-    </section>
-    <section class="features container">
-        <div class="discount">
-            <a class="disc-link" href="#">
-                <div class="disc-text">
-                    <p class="disc-amount">30% <span class="disc-offers">OFFER</span></p>
-                    <p class="discount-category">FOR WOMEN</p>
-                </div>
-            </a>
-        </div>
-        <div class="features-box">
-            <article class="feature-item">
-                <img class="feature-img" src="img/feature-img-1.png" alt="feature" width="45" height="32">
-                <div class="feature-block">
-                    <h3 class="heading-feature">Free Delivery</h3>
-                    <p class="feature-text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-                </div>
-            </article>
-            <article class="feature-item">
-                <img class="feature-img" src="img/feature-img-2.png" alt="feature" width="40" height="40">
-                <div class="feature-block">
-                    <h3 class="heading-feature">Sales &amp discounts</h3>
-                    <p class="feature-text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-                </div>
-            </article>
-            <article class="feature-item">
-                <img class="feature-img" src="img/feature-img-3.png" alt="feature" width="49" height="35">
-                <div class="feature-block">
-                    <h3 class="heading-feature">Quality assurance</h3>
-                    <p class="feature-text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-                </div>
-            </article>
-        </div>
-    </section>
-    <section class="subscribe">
-        <aside class="review">
-            <img class="review-img" src="img/review-photo.jpg" alt="review-photo" width="83" height="83">
-            <div class="review-box">
-                <p class="review-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
-                <h3 class="review-name">Bin Burhan</h3>
-                <p class="review-place">Dhaka, Bd</p>
-            </div>
-        </aside>
-        <div class="subscribe-block">
-            <div class="subscribe-box">
-                <h3 class="subscribe-heading tac">Subscribe</h3>
-                <p class="subscribe-text tac">FOR OUR NEWLETTER AND PROMOTION</p>
-            </div>
-            <form class="subscribe-form" action="#">
-                <input class="subscribe-email" type="email" placeholder="Enter Your Email">
-                <input class="button subscribe-btn" type="submit" value="Subscribe">
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
         </div>
-    </section>
+    </nav>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active"> <img class="d-block w-100" src="http://www.garantprim.ru/upload/iblock/28a/osama_big.jpg" alt="First slide"> </div>
+            <div class="carousel-item"> <img class="d-block w-100" src="http://kazan-sushi.ru/logo1.jpg" alt="Second slide"> </div>
+            <div class="carousel-item"> <img class="d-block w-100" src="http://ohasi-sushi.ru/static/i/slide_4.jpg" alt="Third slide"> </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a>
+        <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
+    </div>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">СУШИ - это вкусняшка!</h1>
+            <p class="lead">Это все знают, но никто про это не говорит...</p>
+        </div>
+    </div>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Роллы</a></li>
+            <li class="breadcrumb-item"><a href="#">Сашими</a></li>
+            <li class="breadcrumb-item active" aria-current="page">суси</li>
+        </ol>
+    </nav>
+    <ul class="list-group">
+        <li class="list-group-item active">С семгой</li>
+        <li class="list-group-item">С угрем</li>
+        <li class="list-group-item">Спайси!!!!</li>
+        <li class="list-group-item">Омлетик</li>
+        <li class="list-group-item">Ну и конечно же тунееееец</li>
+    </ul>
+    <div class="card" style="width: 18rem;"> <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpVwdL3JNmxUZVktFFbKg5V39qyBvqDk4h9hi7Tf0AreSYcWRqAw" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">Он такойкрасный</h5>
+            <p class="card-text">Прямо как свекла.</p> <a href="#" class="btn btn-primary">Заказать 100500</a> </div>
+    </div>
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous"> <span aria-hidden="true">&laquo;</span> <span class="sr-only">Previous</span> </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next"> <span aria-hidden="true">&raquo;</span> <span class="sr-only">Next</span> </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
+
 </html>
