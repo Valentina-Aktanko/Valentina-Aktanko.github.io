@@ -963,3 +963,29 @@ body {
 
 
 
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pagination-list {
+    list-style-type: none;
+    display: flex;
+    border-radius: 3px;
+    border: 1px solid #ebebeb;
+    background-color: #fff;
+}
+
+.pagination-list:before {
+    content: "";
+}
+
+.pagination-link {
+    text-decoration: none;
+    display: block;
+    color: #c4c4c4;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 16px;
+}
