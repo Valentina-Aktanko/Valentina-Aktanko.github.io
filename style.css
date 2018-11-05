@@ -35,7 +35,6 @@ body {
     text-transform: uppercase;
 }
 
-
 .logo-img {
     margin-right: 13px;
 }
@@ -55,8 +54,7 @@ body {
     position: absolute;
     width: 262px;
     border-radius: 5px;
-    background-color: #ffffff;
-    background-color: #ffffff;
+    background-color: #fff;
     padding: 15px;
 }
 
@@ -92,7 +90,7 @@ body {
     color: #4f4f4f;
 }
 
- .browse-summary::-webkit-details-marker {
+.browse-summary::-webkit-details-marker {
     display: none;
 }
 
@@ -156,14 +154,14 @@ body {
 .button:hover {
     border-radius: 3px;
     outline: 1px solid #ef5b70;
-    background-color: #ffffff;  
+    background-color: #ffffff;
     color: #ef5b70;
 }
 
 .button:active {
     color: #4a4a4a;
     outline: 1px solid #eaeaea;
-} 
+}
 
 .nav {
     background-color: #ffffff;
@@ -300,9 +298,8 @@ body {
 }
 
 .fashion-span {
-    color: #f16d7f;    
+    color: #f16d7f;
 }
-
 
 .product-categories {
     margin-bottom: 100px;
@@ -326,11 +323,13 @@ body {
     height: 542px;
     background: url(img/for-man.jpg) no-repeat;
 }
+
 .accesories {
     height: 261px;
     background: url("img/accesories.jpg") no-repeat #dadad2;
     background-position: 149px 0;
 }
+
 .category-link {
     display: block;
     width: 175px;
@@ -407,7 +406,7 @@ body {
 }
 
 .item-product:hover img {
-    filter:brightness(50%); 
+    filter: brightness(50%);
 }
 
 .item-product:hover {
@@ -466,7 +465,6 @@ body {
     box-shadow: 0 0 8px #fff;
 }
 
-
 .box-product {
     display: flex;
     flex-wrap: wrap;
@@ -475,8 +473,6 @@ body {
     padding-top: 63px;
     margin-bottom: 40px;
 }
-
-
 
 .btn-product {
     padding-left: 24px;
@@ -530,7 +526,7 @@ body {
     flex-direction: column;
     justify-content: space-around;
     padding: 48px 31px;
-    
+
 }
 
 .feature-item {
@@ -559,7 +555,7 @@ body {
 
 .subscribe-review {
     background: url(img/subsribe-bg.jpg) no-repeat;
-    background-size:cover;
+    background-size: cover;
     margin-bottom: 110px;
 }
 
@@ -611,7 +607,7 @@ body {
 
 .review-place {
     font-size: 12px;
-/*    font-weight: 300;*/
+    /*    font-weight: 300;*/
     line-height: 14px;
     letter-spacing: 0.3px;
 }
@@ -662,8 +658,6 @@ body {
     outline: 0;
 }
 
-
-
 .copyright-social-box {
     background-color: #e6e6e6;
 }
@@ -671,7 +665,7 @@ body {
 .copyright-social {
     height: 79px;
     display: flex;
-    justify-content: space-between;  
+    justify-content: space-between;
 }
 
 .copyright {
@@ -690,7 +684,7 @@ body {
     display: block;
     text-align: center;
     margin-right: 8px;
-    
+
     background-color: #fff;
     text-decoration: none;
     color: #b2b2b2;
@@ -718,7 +712,6 @@ body {
     background-color: #fff;
 }
 
-
 .footer-info {
     display: flex;
     margin-bottom: 89px;
@@ -727,7 +720,7 @@ body {
 .footer-text {
     color: #898989;
     font-size: 14px;
-/*    font-weight: 300;*/
+    /*    font-weight: 300;*/
     line-height: 24px;
     letter-spacing: 0.35px;
     margin-top: 25px;
@@ -801,8 +794,12 @@ body {
     text-decoration: none;
     color: #636363;
     font-size: 14px;
-/*    font-weight: 300;*/
+    /*    font-weight: 300;*/
     text-transform: uppercase;
+}
+
+.breadcrumb-link:hover {
+    color: #f16d7f;
 }
 
 .breadcrumb-link:after {
@@ -891,13 +888,16 @@ body {
 
 .trending-link {
     display: inline-block;
-    
+
 }
 
-.filter-text-span {
+.filter-text {
     padding: 0 11px;
     border-right: 1px solid #dfdfdf;
+    text-decoration: none;
+    color: #6f6e6e;
 }
+
 
 .filter-text-span:first-of-type {
     padding-left: 0;
@@ -939,7 +939,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
-    
+
 }
 
 .c-prod-name {
@@ -950,6 +950,7 @@ body {
     width: 263px;
     margin-bottom: 36px;
 }
+
 }
 
 .filter-range {
@@ -960,9 +961,6 @@ body {
 .filter-range:focus {
     outline: none;
 }
-
-
-
 
 .pagination {
     display: flex;
@@ -977,9 +975,14 @@ body {
     background-color: #fff;
 }
 
-.pagination-list:before {
-    content: "";
+/*
+.pagination-item:first-of-type:before {
+ content: "<";
 }
+*/
+
+
+
 
 .pagination-link {
     text-decoration: none;
@@ -988,4 +991,33 @@ body {
     font-size: 16px;
     font-weight: bold;
     padding: 16px;
+}
+
+
+
+.pagination-link:hover {
+    color: #f16d7f;
+}
+
+.filter-sort {
+    border: 1px solid #ebebeb;
+}
+
+.bottom-filter {
+    background-color: #f3f3f3;
+    height: 50px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+}
+
+.filter-link:hover {
+    color: #f16d7f;
+}
+
+.current-pag {
+    color: #f16d7f;
 }
