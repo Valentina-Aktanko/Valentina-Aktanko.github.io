@@ -908,6 +908,19 @@ body {
     box-sizing: border-box;
     background-color: #f7f7f7;
     height: 777px;
-    margin: 0 auto; }
+    display: flex;
+    justify-content: center;
+    padding-top: 11px; }
+  .single-product-empty {
+    height: 763px; }
+  .single-product-desc {
+    position: absolute;
+    top: 680px;
+    left: 25%;
+    border: 1px solid #eaeaea;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    width: 1141px;
+    height: 730px; }
 
 /*# sourceMappingURL=style-sass.css.map */
