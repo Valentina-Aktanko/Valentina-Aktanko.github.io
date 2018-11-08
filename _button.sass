@@ -1,0 +1,33 @@
+@import "vars"
+
+.button
+  display: block
+  text-decoration: none
+  border-radius: 3px
+  background-color: $main-color
+  color: #fff
+  font-weight: 400
+  &:hover
+    outline: 1px solid #ef5b70
+    box-sizing: border-box
+    background-color: #fff
+    color: #ef5b70
+  &:active
+    color: #4a4a4a
+    outline: 1px solid #eaeaea
+  &-myAccount
+    height: 38px
+    line-height: 38px
+    font-size: 15px
+    padding-left: 19px
+    padding-right: 29px
+    margin-left: 8px
+    &:after
+      content: '\25BC'
+      position: absolute
+      margin-left: 6px
+  &-viewAll
+    height: 44px
+    line-height: 44px
+    font-size: 16px
+    padding: 0 46px
