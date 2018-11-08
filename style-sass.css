@@ -661,19 +661,19 @@ body {
 .footer-column:last-of-type {
   margin-right: 0; }
 
-.breadcrumd {
+.breadcrumb {
   background-color: #f8f3f4;
   margin-bottom: 60px; }
-  .breadcrumd-single {
+  .breadcrumb-single {
     margin-bottom: 0; }
 
-.breadcrumd-heading {
+.breadcrumb-heading {
   color: #f16d7f;
   font-size: 24px;
   font-weight: 400;
   text-transform: uppercase; }
 
-.breadcrumd-flex {
+.breadcrumb-flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -915,12 +915,13 @@ body {
     height: 763px; }
   .single-product-desc {
     position: absolute;
+    width: 1140px;
+    height: 730px;
     top: 680px;
-    left: 25%;
+    left: 50%;
+    margin-left: -570px px;
     border: 1px solid #eaeaea;
     box-sizing: border-box;
-    background-color: #ffffff;
-    width: 1141px;
-    height: 730px; }
+    background-color: #fff; }
 
 /*# sourceMappingURL=style-sass.css.map */
