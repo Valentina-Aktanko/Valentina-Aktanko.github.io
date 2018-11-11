@@ -61,6 +61,7 @@
   padding-left: 0.5em
 
 .browse-dl[open] > .browse-summary::after
+.browse-dl[open] > .browse-summary::after
   content: '\25BC'
   padding-left: 0.5em
 
@@ -103,6 +104,12 @@
   align-items: center
   position: relative
 
+.cart-box
+  position: relative
+
+.cart-box:hover .drop-cart
+  display: block
+
 .cart-img
   margin-right: 26px
 
@@ -112,18 +119,22 @@
   border: 1px solid #eaeaea
   box-sizing: border-box
   position: absolute
-  top: 85px
+  top: 50px
   left: -15px
   width: 262px
   padding: 21px 17px
+  display: none
   &-item
     display: flex
     border-bottom: 1px solid #ededed
     padding-bottom: 16px
+    margin-bottom: 16px
   &-text
     display: flex
     flex-direction: column
     padding: 10px 14px
+    position: relative
+    width: 100%
   &-heading
     color: #222222
     font-size: 12px
@@ -141,3 +152,21 @@
     align-items: baseline
     &-x
       font-size: 10px
+  &-del-btn
+    color: #c0c0c0
+    font-size: 16px
+    font-weight: 400
+    text-transform: uppercase
+    position: absolute
+    right: 0
+    top: 33px
+    &:hover
+      color: $main-color
+  &-total
+    color: #222
+    font-size: 16px
+    font-weight: 700
+    text-transform: uppercase
+    display: flex
+    justify-content: space-between
+
