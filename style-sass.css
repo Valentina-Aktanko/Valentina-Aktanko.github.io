@@ -175,7 +175,8 @@ body {
   position: relative; }
 
 .cart-box:hover .drop-cart {
-  display: block; }
+  display: block;
+  z-index: 1; }
 
 .cart-img {
   margin-right: 26px; }
