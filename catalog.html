@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:100,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="style-sass.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 <body>
 <header class="header">
@@ -45,13 +45,13 @@
                         </ul>
                     </div>
                 </details>
-                <input class="browse-input" type="text" placeholder="Search for Item...">
-                <button class="browse-btn" type="submit"><i class="fas fa-search"></i></button>
+                <input class="header-search search-input" type="text" placeholder="Search for Item...">
+                <a class="header-search search-img"><i class="fas fa-search"></i></a>
             </form>
         </div>
         <div class="header-right">
-            <a class="cart-link" href="#"><img class="cart-img" src="img/cart.svg" alt="cart" width="32" height="29"></a>
-            <a class="button button-myAccount" href="#">My Account</a>
+            <a class="cart-link" href="shopping-cart.html"><img class="cart-img" src="img/cart.svg" alt="cart" width="32" height="29"></a>
+            <a class="button button_myAccount header__button" href="#">My Account</a>
         </div>
     </div>
 </header>
@@ -59,7 +59,7 @@
     <div class="container">
         <ul class="menu-list">
             <li class="menu-item"><a class="menu-link" href="index.html">Home</a></li>
-            <li class="menu-item"> <a class="menu-link" href="catalog.html">Man</a>
+            <li class="menu-item"> <a class="menu-link" href="#">Man</a>
                 <div class="drop-box">
                     <div class="drop-flex">
                         <h3 class="drop-heading">Women</h3>
@@ -300,9 +300,14 @@
                 </div>
             </div>
         </div>
-        <div class="pag-flex">
-            <nav class="pagination">
+        <section class="pagination">
+            <nav class="pagination-nav">
                 <ul class="pagination-list">
+                    <li class="pagination-item">
+                        <a class="pagination-link pagination-link-disable">
+                            <i class="fas fa-chevron-left"></i>
+                        </a>
+                    </li>
                     <li class="pagination-item"> <a class="pagination-link pagination-link-current">1</a></li>
                     <li class="pagination-item"> <a class="pagination-link" href="#">2</a></li>
                     <li class="pagination-item"> <a class="pagination-link" href="#">3</a></li>
@@ -311,13 +316,17 @@
                     <li class="pagination-item"> <a class="pagination-link" href="#">6</a></li>
                     <li class="pagination-item"> <a class="pagination-link" href="#">...</a></li>
                     <li class="pagination-item"> <a class="pagination-link" href="#">20</a></li>
+                    <li class="pagination-item">
+                        <a class="pagination-link pagination-link-current" href="#">
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </li>
                 </ul>
             </nav>
-            <a href="#" class="button button-viewAll">View All</a>
-        </div>
+            <a href="#" class="button button_viewAll pagination__button">View All</a>
+        </section>
     </div>
 </section>
-
 <div class="features-box features-box-catalog container">
     <article class="feature-item feature-item-catalog"><img class="feature-img" src="img/feature-img-1.png" alt="feature" width="45"
                                        height="32">
@@ -344,7 +353,6 @@
         </div>
     </article>
 </div>
-
 <section class="subscribe-review">
     <div class="subscribe-review-box container">
         <div class="review-wrapper">

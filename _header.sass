@@ -15,23 +15,6 @@
   display: flex
   align-items: center
 
-.logo
-  display: flex
-  align-items: center
-  color: #222
-  font-size: 27px
-  font-weight: 300
-  text-decoration: none
-  text-transform: uppercase
-
-.logo-img
-  margin-right: 13px
-
-.logo-d
-  color: $main-color
-  font-weight: 400
-  margin-right: 37px
-
 .header-form
   display: flex
   align-items: center
@@ -42,6 +25,7 @@
   border-radius: 5px
   background-color: #fff
   padding: 15px
+  z-index: 1
 
 .browse-heading
   width: 236px
@@ -80,32 +64,80 @@
   content: '\25BC'
   padding-left: 0.5em
 
-.browse-input,
-.browse-btn
+.header-search
   height: 38px
   line-height: 38px
-  border-radius: 0 3px 3px 0
   border: 1px solid #e6e6e6
-  background-color: #ffffff
-  color: #a4a4a4
+  border-radius: 0 3px 3px 0
+  box-sizing: border-box
+  background-color: #fff
   font-size: 14px
-  font-weight: 300
   letter-spacing: 0.35px
   border-left: none
   padding: 0
-  box-sizing: border-box
+  font-weight: 300
 
-.browse-input
+.search-input
+  &::-webkit-input-placeholder,
+  &::-moz-placeholder,
+  &:-moz-placeholder,
+  &:-ms-input-placeholder
+    color: #a4a4a4
+
+.search-input
   width: 280px
-  padding-left: 16px
-  padding-right: 16px
+  padding: 0 16px
+  color: #222
 
-.browse-btn
+.search-img
+  display: block
+  color: #a4a4a4
   width: 36px
+  padding: 0 11px
+  transition: color 0.3s
+  &:hover
+    color: $main-color
 
 .header-right
   display: flex
   align-items: center
+  position: relative
 
 .cart-img
   margin-right: 26px
+
+.drop-cart
+  border-radius: 5px
+  background-color: #ffffff
+  border: 1px solid #eaeaea
+  box-sizing: border-box
+  position: absolute
+  top: 85px
+  left: -15px
+  width: 262px
+  padding: 21px 17px
+  &-item
+    display: flex
+    border-bottom: 1px solid #ededed
+    padding-bottom: 16px
+  &-text
+    display: flex
+    flex-direction: column
+    padding: 10px 14px
+  &-heading
+    color: #222222
+    font-size: 12px
+    font-weight: 700
+    text-transform: uppercase
+    margin-top: 0
+    margin-bottom: 10px
+  &-count
+    color: #f16d7f
+    font-size: 12px
+    text-transform: uppercase
+    width: 52px
+    display: flex
+    justify-content: space-between
+    align-items: baseline
+    &-x
+      font-size: 10px
