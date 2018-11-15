@@ -376,7 +376,7 @@ body {
 
 .banner-back {
   height: 100%;
-  background: url(img/back-b.jpg) 0 -51px;
+  background: url(../img/back-b.jpg) 0 -51px;
   display: flex;
   align-items: center; }
 
@@ -420,11 +420,11 @@ body {
 
 .for-men {
   height: 542px;
-  background: url(img/for-man.jpg) no-repeat; }
+  background: url(../img/for-man.jpg) no-repeat; }
 
 .accesories {
   height: 261px;
-  background: #dadad2 url("img/accesories.jpg") no-repeat 149px 0; }
+  background: #dadad2 url("../img/accesories.jpg") no-repeat 149px 0; }
 
 .category-link {
   display: block;
@@ -443,11 +443,11 @@ body {
 
 .women {
   height: 261px;
-  background: url(img/women.jpg) no-repeat; }
+  background: url(../img/women.jpg) no-repeat; }
 
 .for-kids {
   height: 542px;
-  background: url(img/for-kids.jpg) no-repeat; }
+  background: url(../img/for-kids.jpg) no-repeat; }
 
 .category-span {
   color: #f16d7f;
@@ -563,7 +563,7 @@ body {
 
 .discount {
   width: 767px;
-  background: url(img/discount-img.jpg) no-repeat;
+  background: url(../img/discount-img.jpg) no-repeat;
   background-size: cover;
   padding: 146px 40px 305px; }
 
@@ -629,7 +629,7 @@ body {
   letter-spacing: 0.35px; }
 
 .subscribe-review {
-  background: url(img/subsribe-bg.jpg) no-repeat;
+  background: url(../img/subsribe-bg.jpg) no-repeat;
   background-size: cover;
   margin-bottom: 110px; }
 
@@ -1301,4 +1301,4 @@ body {
       margin-left: 20px;
       color: #f16d7f; }
 
-/*# sourceMappingURL=style-sass.css.map */
+/*# sourceMappingURL=style.css.map */
