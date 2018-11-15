@@ -5,7 +5,7 @@
     <title>Products</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="style/normalize.css">
-    <link rel="stylesheet" href="style-sass.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 <body>
@@ -45,8 +45,8 @@
                         </ul>
                     </div>
                 </details>
-                <input class="header-search search-input" type="text" placeholder="Search for Item...">
-                <a class="header-search search-img"><i class="fas fa-search"></i></a>
+                <input class="header-search" type="text" placeholder="Search for Item...">
+                <a href="#" class="header-search search-img"><i class="fas fa-search"></i></a>
             </form>
         </div>
         <div class="header-right">
@@ -66,8 +66,11 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star-half-alt"></i>
                             </p>
-                            <p class="drop-cart-count">1<span class="drop-cart-count-x">x</span>$250</p>
-                            <a class="drop-cart-del-btn" href="#"><i class="fas fa-times-circle"></i></a>
+                            <p class="drop-cart-count">1
+                                <span class="drop-cart-count-x">x</span>
+                                <span class="beforePrice">250</span>
+                            </p>
+                            <a class="del-button drop-cart__del-button" href="#"><i class="fas fa-times-circle"></i></a>
                         </div>
                     </div>
                     <div class="drop-cart-item">
@@ -81,16 +84,19 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star-half-alt"></i>
                             </p>
-                            <p class="drop-cart-count">1<span class="drop-cart-count-x">x</span>$250</p>
-                            <a class="drop-cart-del-btn" href="#"><i class="fas fa-times-circle"></i></a>
+                            <p class="drop-cart-count">1
+                                <span class="drop-cart-count-x">x</span>
+                                <span class="beforePrice">250</span>
+                            </p>
+                            <a class="del-button drop-cart__del-button" href="#"><i class="fas fa-times-circle"></i></a>
                         </div>
                     </div>
                     <div class="drop-cart-total">
                         <p class="total-test">Total</p>
                         <p class="total-price">500.00</p>
                     </div>
-                    <a href="#" class="button button_checkout drop-cart__button">Checkout</a>
-                    <a href="shopping-cart.html" class="button button_checkout drop-cart__button">Go to cart</a>
+                    <a href="#" class="button button_black drop-cart__button">Checkout</a>
+                    <a href="shopping-cart.html" class="button button_black drop-cart__button">Go to cart</a>
                 </div>
             </div>
             <a class="button button_myAccount header__button" href="#">My Account</a>
@@ -259,86 +265,95 @@
         </div>
         <div class="catalog-products">
             <div class="box-product container">
-                <div class="cat-item-product">
+                <div class="item-product cat-item-product">
                     <a href="product.html" class="product-link">
                         <img class="product-img" src="img/c-prod-1.jpg" alt="product-image">
                         <div class="product-text">
                             <p class="product-name c-prod-name">Mango People T-shirt</p>
-                            <p class="product-price">$52.00</p>
+                            <p class="product-price beforePrice">52.00</p>
                         </div>
                     </a>
+                    <div class="parent-add"><a class="add" href="#">Add to Cart</a></div>
                 </div>
-                <div class="cat-item-product">
+                <div class="item-product cat-item-product">
                     <a href="product.html" class="product-link">
                         <img class="product-img" src="img/c-prod-2.jpg" alt="product-image">
                         <div class="product-text">
                             <p class="product-name c-prod-name">Mango People T-shirt</p>
-                            <p class="product-price">$52.00</p>
+                            <p class="product-price beforePrice">52.00</p>
                         </div>
                     </a>
+                    <div class="parent-add"><a class="add" href="#">Add to Cart</a></div>
                 </div>
-                <div class="cat-item-product">
+                <div class="item-product cat-item-product">
                     <a href="product.html" class="product-link">
                         <img class="product-img" src="img/c-prod-3.jpg" alt="product-image">
                         <div class="product-text">
                             <p class="product-name c-prod-name">Mango People T-shirt</p>
-                            <p class="product-price">$52.00</p>
+                            <p class="product-price beforePrice">52.00</p>
                         </div>
                     </a>
+                    <div class="parent-add"><a class="add" href="#">Add to Cart</a></div>
                 </div>
-                <div class="cat-item-product">
+                <div class="item-product cat-item-product">
                     <a href="product.html" class="product-link">
                         <img class="product-img" src="img/c-prod-4.jpg" alt="product-image">
                         <div class="product-text">
                             <p class="product-name c-prod-name">Mango People T-shirt</p>
-                            <p class="product-price">$52.00</p>
+                            <p class="product-price beforePrice">52.00</p>
                         </div>
                     </a>
+                    <div class="parent-add"><a class="add" href="#">Add to Cart</a></div>
                 </div>
-                <div class="cat-item-product">
+                <div class="item-product cat-item-product">
                     <a href="product.html" class="product-link">
                         <img class="product-img" src="img/c-prod-5.jpg" alt="product-image">
                         <div class="product-text">
                             <p class="product-name c-prod-name">Mango People T-shirt</p>
-                            <p class="product-price">$52.00</p>
+                            <p class="product-price beforePrice">52.00</p>
                         </div>
                     </a>
+                    <div class="parent-add"><a class="add" href="#">Add to Cart</a></div>
                 </div>
-                <div class="cat-item-product">
+                <div class="item-product cat-item-product">
                     <a href="product.html" class="product-link">
                         <img class="product-img" src="img/c-prod-6.jpg" alt="product-image">
                         <div class="product-text">
                             <p class="product-name c-prod-name">Mango People T-shirt</p>
-                            <p class="product-price">$52.00</p>
+                            <p class="product-price beforePrice">52.00</p>
                         </div>
                     </a>
+                    <div class="parent-add"><a class="add" href="#">Add to Cart</a></div>
                 </div>
-                <div class="cat-item-product">
+                <div class="item-product cat-item-product">
                     <a href="product.html" class="product-link">
                         <img class="product-img" src="img/c-prod-7.jpg" alt="product-image">
                         <div class="product-text">
                             <p class="product-name c-prod-name">Mango People T-shirt</p>
-                            <p class="product-price">$52.00</p>
+                            <p class="product-price beforePrice">52.00</p>
                         </div>
                     </a>
+                    <div class="parent-add"><a class="add" href="#">Add to Cart</a></div>
                 </div>
-                <div class="cat-item-product">
+                <div class="item-product cat-item-product">
                     <a href="product.html" class="product-link">
                         <img class="product-img" src="img/c-prod-8.jpg" alt="product-image">
                         <div class="product-text">
                             <p class="product-name c-prod-name">Mango People T-shirt</p>
-                            <p class="product-price">$52.00</p>
+                            <p class="product-price beforePrice">52.00</p>
                         </div>
                     </a>
+                    <div class="parent-add"><a class="add" href="#">Add to Cart</a></div>
                 </div>
-                <div class="cat-item-product">
+                <div class="item-product cat-item-product">
                     <a href="product.html" class="product-link">
                         <img class="product-img" src="img/c-prod-9.jpg" alt="product-image">
                         <div class="product-text">
                             <p class="product-name c-prod-name">Mango People T-shirt</p>
-                            <p class="product-price">$52.00</p>
+                            <p class="product-price beforePrice">52.00</p>
                         </div>
                     </a>
+                    <div class="parent-add"><a class="add" href="#">Add to Cart</a></div>
                 </div>
             </div>
         </div>
@@ -424,60 +439,57 @@
 <footer class="footer">
     <section class="footer-info container">
         <div class="footer-logo">
-            <a class="logo footer-brand" href="#"> <img class="logo-img" src="img/logo.png" alt="logo">BRAN<span class="logo-d">D</span> </a>
-            <p class="footer-text">Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.</p>
+            <a class="logo footer-brand" href="#"> <img class="logo-img" src="img/logo.png" alt="logo">BRAN<span
+                    class="logo-d">D</span> </a>
+            <p class="footer-text">Objectively transition extensive data rather than cross functional solutions.
+                Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate
+                an expanded array of processes and cross-unit partnerships.</p>
             <p class="footer-text">Efficiently plagiarize 24/365 action items and focused infomediaries.
                 Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
         </div>
         <div class="footer-column">
             <h3 class="footer-heading">COMPANY</h3>
-            <nav class="nav">
-                <ul class="footer-menu">
-                    <li><a class="footer-link" href="#">Home </a></li>
-                    <li><a class="footer-link" href="#">Shop</a></li>
-                    <li><a class="footer-link" href="#">About</a></li>
-                    <li><a class="footer-link" href="#">How It Works</a></li>
-                    <li><a class="footer-link" href="#">Contact</a></li>
-                </ul>
-            </nav>
+            <ul class="footer-menu">
+                <li><a class="footer-link" href="#">Home </a></li>
+                <li><a class="footer-link" href="#">Shop</a></li>
+                <li><a class="footer-link" href="#">About</a></li>
+                <li><a class="footer-link" href="#">How It Works</a></li>
+                <li><a class="footer-link" href="#">Contact</a></li>
+            </ul>
         </div>
         <div class="footer-column">
             <h3 class="footer-heading">INFORMATION</h3>
-            <nav class="nav">
-                <ul class="footer-menu">
-                    <li><a class="footer-link" href="#">Tearms&amp;Condition </a></li>
-                    <li><a class="footer-link" href="#">Privacy Policy</a></li>
-                    <li><a class="footer-link" href="#">How to Buy</a></li>
-                    <li><a class="footer-link" href="#">How to Sell</a></li>
-                    <li><a class="footer-link" href="#">Promotion</a></li>
-                </ul>
-            </nav>
+            <ul class="footer-menu">
+                <li><a class="footer-link" href="#">Tearms&amp;Condition </a></li>
+                <li><a class="footer-link" href="#">Privacy Policy</a></li>
+                <li><a class="footer-link" href="#">How to Buy</a></li>
+                <li><a class="footer-link" href="#">How to Sell</a></li>
+                <li><a class="footer-link" href="#">Promotion</a></li>
+            </ul>
         </div>
         <div class="footer-column">
             <h3 class="footer-heading">SHOP CATEGORY</h3>
-            <nav class="nav">
-                <ul class="footer-menu">
-                    <li><a class="footer-link" href="#">Men </a></li>
-                    <li><a class="footer-link" href="#">Women</a></li>
-                    <li><a class="footer-link" href="#">Child</a></li>
-                    <li><a class="footer-link" href="#">Apparel</a></li>
-                    <li><a class="footer-link" href="#">Brows All</a></li>
-                </ul>
-            </nav>
+            <ul class="footer-menu">
+                <li><a class="footer-link" href="#">Men </a></li>
+                <li><a class="footer-link" href="#">Women</a></li>
+                <li><a class="footer-link" href="#">Child</a></li>
+                <li><a class="footer-link" href="#">Apparel</a></li>
+                <li><a class="footer-link" href="#">Brows All</a></li>
+            </ul>
         </div>
     </section>
-    <section class="copyright-social-box">
+    <div class="copyright-social-box">
         <div class="copyright-social container">
-            <div class="copyright"> &copy;2017 Brand All Rights Reserved. </div>
+            <div class="copyright"> &copy;2017 Brand All Rights Reserved.</div>
             <div class="social">
-                <a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="icon icon-disadled"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" class="icon"><i class="fab fa-pinterest-p"></i></a>
-                <a href="#" class="icon"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon social-icon_disadled"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-pinterest-p"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-google-plus-g"></i></a>
             </div>
         </div>
-    </section>
+    </div>
 </footer>
 </body>
 </html>
