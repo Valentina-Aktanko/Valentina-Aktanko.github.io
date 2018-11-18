@@ -879,7 +879,61 @@ body
       margin-left: 20px
       color: #f16d7f
 
-.foldingItem
+.details-item
+
+  .details-flex
+    display: flex
+    padding: 39px 35px
+    .details-form
+      width: ($width-site - 35)/2
+      display: flex
+      flex-direction: column
+      .details-input
+        width: 390px
+        height: 45px
+        padding: 0 18px
+        line-height: 18
+        border: 1px solid #eaeaea
+        background-color: #fff
+        margin-bottom: 20px
+        &:focus
+          outline: none
+
+  .details-text
+    color: #222222
+    font-size: 13px
+    font-weight: 400
+    text-transform: uppercase
+    &_heading
+      font-size: 16px
+      font-weight: 700
+    &_secondary
+      color: #b3b2b2
+      text-transform: capitalize
+      margin-bottom: 0
+    &_label
+      font-size: 12px
+      margin-bottom: 16px
+    &_required
+      color: #ff0d0d
+      text-transform: capitalize
+      margin-bottom: 20px
+    &_link
+      color: #222222
+      font-size: 14px
+      font-weight: 400
+      text-decoration: none
+      text-transform: capitalize
+    &__headingNumber
+      margin-right: 10px
+    &__insideBlock
+      margin-bottom: 15px
+    &__betweenBlock
+      margin-bottom: 26px
+    &__radioLabel
+      margin-left: 14px
+
+
 
 
 

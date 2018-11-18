@@ -174,14 +174,71 @@
         </ul>
     </div>
 </section>
-<section class="foldingBlocks container">
-    <details open="open" class="foldingItem">
-        <h3>01.Shipping Adress</h3>
-        <div class="registration">
-
-        </div>
-
+<section class="order-details container">
+    <details open="open" class="details-item">
+        <summary class="details-text_heading"><span class="details-text__headingNumber">01.</span>Shipping Address</summary>
+        <div class="details-flex">
+            <form action="#" class="details-form details-text">
+                <div class="details-text__betweenBlock">
+                    <p class="details-text__insideBlock">Check as a guest or register</p>
+                    <p class="details-text_secondary">Register with us for future convenience</p>
+                </div>
+                <div class="details-text__betweenBlock">
+                    <p class="details-text_label">
+                        <input type="radio" value="guest" id="noRegister" name="checkoutAs">
+                        <label class="details-text__radioLabel" for="noRegister">checkout as guest</label>
+                    </p>
+                    <p class="details-text_label">
+                        <input type="radio" value="register" id="register"  name="checkoutAs">
+                        <label class="details-text__radioLabel" for="register">register</label>
+                    </p>
+                </div>
+                <div class="details-text__betweenBlock">
+                    <p class="details-text__insideBlock">register and save time!</p>
+                    <p class="details-text_secondary">Register with us for future convenience</p>
+                </div>
+                <div class="details-text__betweenBlock">
+                    <p class="details-text_secondary details-text__insideBlock">Fast and easy checkout</p>
+                    <p class="details-text_secondary">Easy access to your order history and status</p>
+                </div>
+                <a href="#" class="button button_black">Continue</a>
+            </form>
+            <form action="#" class="details-form details-text">
+                <div class="details-text__betweenBlock">
+                    <p class="details-text__insideBlock">Already registered?</p>
+                    <p class="details-text_secondary">Please log in below</p>
+                </div>
+                <label for="email" class="details-text_label">EMAIL ADDRESS</label>
+                <input class="details-input" type="email" id="email">
+                <label for="password" class="details-text_label">PASSWORD</label>
+                <input class="details-input" type="password" id="password">
+                <p class="details-text_required">* Required Fields</p>
+                <a href="#" class="button button_black">Log in</a>
+                <a href="#" class="details-text_link">Forgot Password ?</a>
+            </form>
     </details>
+    <details class="details-item">
+        <summary class="details-text_heading"><span class="details-text__headingNumber">02.</span>BILLING INFORMATION</summary>
+        <div class="details-flex">Billing information</div>
+    </details>
+    <details class="details-item">
+        <summary class="details-text_heading"><span class="details-text__headingNumber">03.</span>SHIPPING INFORMATION</summary>
+        <div class="details-flex">Shipping information</div>
+    </details>
+    <details class="details-item">
+        <summary class="details-text_heading"><span class="details-text__headingNumber">04.</span>SHIPPING METHOD</summary>
+        <div class="details-flex">Shipping method</div>
+    </details>
+    <details class="details-item">
+        <summary class="details-text_heading"><span class="details-text__headingNumber">05.</span>PAYMENT METHOD</summary>
+        <div class="details-flex">Payment method</div>
+    </details>
+    <details class="details-item">
+        <summary class="details-text_heading"><span class="details-text__headingNumber">06.</span>ORDER REVIEW</summary>
+        <div class="details-flex">Order review</div>
+    </details>
+
+
 </section>
 
 <section class="subscribe-review">
@@ -201,7 +258,7 @@
             <div class="subscribe-box">
                 <div class="subscribe-text">
                     <h3 class="subscribe-heading tac">Subscribe</h3>
-                    <p class="subscribe-p tac">FOR OUR NEWLETTER AND PROMOTION</p>
+                    <p class="subscribe-p tac">FOR OUR NEW LETTER AND PROMOTION</p>
                 </div>
                 <form class="subscribe-form" action="#">
                     <input class="subscribe-email" type="email" placeholder="Enter Your Email">

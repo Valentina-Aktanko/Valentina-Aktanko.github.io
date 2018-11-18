@@ -1160,7 +1160,7 @@ body {
 .sp-select {
   padding-right: 25px; }
   .sp-select:after {
-    content: "▼";
+    content: "тЦ╝";
     padding: 0 8px;
     font-size: 12px;
     position: absolute;
@@ -1300,5 +1300,56 @@ body {
     .total-box .grandTotal .grandTotal-price {
       margin-left: 20px;
       color: #f16d7f; }
+
+.details-item .details-flex {
+  display: flex;
+  padding: 39px 35px; }
+  .details-item .details-flex .details-form {
+    width: 552.5px;
+    display: flex;
+    flex-direction: column; }
+    .details-item .details-flex .details-form .details-input {
+      width: 390px;
+      height: 45px;
+      padding: 0 18px;
+      line-height: 18;
+      border: 1px solid #eaeaea;
+      background-color: #fff;
+      margin-bottom: 20px; }
+      .details-item .details-flex .details-form .details-input:focus {
+        outline: none; }
+.details-item .details-text {
+  color: #222222;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase; }
+  .details-item .details-text_heading {
+    font-size: 16px;
+    font-weight: 700; }
+  .details-item .details-text_secondary {
+    color: #b3b2b2;
+    text-transform: capitalize;
+    margin-bottom: 0; }
+  .details-item .details-text_label {
+    font-size: 12px;
+    margin-bottom: 16px; }
+  .details-item .details-text_required {
+    color: #ff0d0d;
+    text-transform: capitalize;
+    margin-bottom: 20px; }
+  .details-item .details-text_link {
+    color: #222222;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: capitalize; }
+  .details-item .details-text__headingNumber {
+    margin-right: 10px; }
+  .details-item .details-text__insideBlock {
+    margin-bottom: 15px; }
+  .details-item .details-text__betweenBlock {
+    margin-bottom: 26px; }
+  .details-item .details-text__radioLabel {
+    margin-left: 14px; }
 
 /*# sourceMappingURL=style.css.map */
