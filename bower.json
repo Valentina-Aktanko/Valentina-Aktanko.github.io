@@ -1,0 +1,17 @@
+{
+  "name": "my_project",
+  "homepage": "https://github.com/Valentina-Aktanko/Valentina-Aktanko.github.io",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery-ui": "^1.12.1"
+  }
+}
