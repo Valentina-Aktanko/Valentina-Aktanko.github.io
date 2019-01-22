@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
           integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="bower_components/jquery-ui/themes/base/all.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
 <body>
 <header class="header">
     <div class="container header-flex">
@@ -176,13 +178,16 @@
 </section>
 <section class="single-product">
     <div class="goods-carousel">
-        <div class="carousel-btn">
-            <i class="fas fa-chevron-left"></i>
-        </div>
-        <img src="img/single-product.jpg" alt="single product photo" width="597" height="724">
-        <div class="carousel-btn">
-            <i class="fas fa-chevron-right"></i>
-        </div>
+        <!--<div class="carousel-btn">-->
+            <!--<i class="fas fa-chevron-left"></i>-->
+        <!--</div>-->
+        <div><img src="img/single-product.jpg" alt="single product photo" width="597" height="724"></div>
+        <div><img src="img/single-product.jpg" alt="single product photo" width="597" height="724"></div>
+        <div><img src="img/single-product.jpg" alt="single product photo" width="597" height="724"></div>
+        <div><img src="img/single-product.jpg" alt="single product photo" width="597" height="724"></div>
+        <!--<div class="carousel-btn">-->
+            <!--<i class="fas fa-chevron-right"></i>-->
+        <!--</div>-->
     </div>
     <div class="sp-empty"></div>
     <div class="sp-desc container">
@@ -358,7 +363,14 @@
 </footer>
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
-
+<script src="slick/slick.min.js"></script>
+<script>
+    $(document).ready(() => {
+        $('.goods-carousel').slick({
+            setting-name: setting-value
+        });
+    });
+</script>
 </body>
 
 </html>
