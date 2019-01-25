@@ -25,14 +25,35 @@ class Cart {
 
     _render() {
         let $cartItemsDiv = $('<div/>', {
-            class: 'cart-items-wrap'
+            class: "cart-items-wrap"
         });
-        let $totalPrice = $('<div/>', {
-            class: 'drop-cart-total'
+        let $totalPriceWrap = $('<div/>', {
+            class: "drop-cart-total"
         });
-        $(this.container).text('Корзина');
+        let $totalText = $('<p/>', {
+            class: "total-test",
+            text: "Total"
+        });
+        let $totalPrice = $('<p/>', {
+            class: "total-price"
+        });
+        let $checkoutLink = $('<a/>', {
+            href: "checkout.html",
+            class: "button button_black drop-cart__button",
+            text: "Checkout"
+
+        });
+        let $shoppingCartLink = $('<a/>', {
+            href: "checkout.html",
+            class: "button button_black drop-cart__button",
+            text: "Go to cart"
+        });
+        $totalText.appendTo($totalPriceWrap);
+        $totalPrice.appendTo($totalPriceWrap);
         $cartItemsDiv.appendTo($(this.container));
-        $totalPrice.appendTo($(this.container));
+        $totalPriceWrap.appendTo($(this.container));
+        $checkoutLink.appendTo($(this.container));
+        $shoppingCartLink.appendTo($(this.container));
     }
     _renderItem(product) {
         let $container = $('<div/>', {
@@ -91,8 +112,7 @@ class Cart {
     }
     _updateCart(product) {
         let $container = $(`div[data-product="${product.id_product}"]`);
-        $container.find('.product-quantity').text(product.quantity);
-        $container.find('.product-price').text(`${product.quantity*product.price} руб.`);
+        $container.find('.total-price').text(${product.quantity*product.price});
     }
     addProduct(element) {
         let productId = +$(element).data('id');
