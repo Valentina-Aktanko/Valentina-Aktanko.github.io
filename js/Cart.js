@@ -35,7 +35,7 @@ class Cart {
             text: "Total"
         });
         let $totalPrice = $('<p/>', {
-            class: "total-price"
+            class: "total-price",
         });
         let $checkoutLink = $('<a/>', {
             href: "checkout.html",
@@ -109,7 +109,7 @@ class Cart {
         $container.appendTo($('.cart-items-wrap'));
     }
     _renderSum(){
-        $('.total-price').text($(this.amount));
+        $('.total-price').text(this.amount);
     }
     _updateCart(product) {
         let $container = $(`div[data-product="${product.id_product}"]`);
