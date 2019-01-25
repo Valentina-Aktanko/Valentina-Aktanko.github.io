@@ -93,7 +93,8 @@ class Cart {
         $name.appendTo($desc);
         // rating
         for (let i=1; i<5; i++) {
-            $fullStar.appendTo($rating);
+            // $fullStar.appendTo($rating);
+            $rating.append($fullStar);
         }
         $halfStar.appendTo($rating);
         $rating.appendTo($desc);
