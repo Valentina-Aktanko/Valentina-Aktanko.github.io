@@ -63,9 +63,9 @@ class Cart {
         let $productLink = $('<a/>', {
             href: "product.html"
         });
-        let $img = $('<img/>', {
-            src: product.product_img,
-            alt: product.product_alt,
+        let $img = $('<img>', {
+            src: `../img/ + ${product.product_img}`,
+            alt: product.product_alt
         });
         let $desc = $('<div/>', {
             class: "drop-cart-text"
@@ -108,11 +108,11 @@ class Cart {
         $container.appendTo($('.cart-items-wrap'));
     }
     _renderSum(){
-        $('.total-price').text(${this.amount});
+        $('.total-price').text($(this.amount));
     }
     _updateCart(product) {
         let $container = $(`div[data-product="${product.id_product}"]`);
-        $container.find('.total-price').text(${product.quantity*product.price});
+        $container.find('.total-price').text($(product.quantity*product.price));
     }
     addProduct(element) {
         let productId = +$(element).data('id');
