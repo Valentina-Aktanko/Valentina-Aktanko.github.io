@@ -64,7 +64,7 @@ class Cart {
             href: "product.html"
         });
         let $img = $('<img>', {
-            src: `../img/ + ${product.product_img}`,
+            src: product.product_img,
             alt: product.product_alt
         });
         let $desc = $('<div/>', {
@@ -98,7 +98,7 @@ class Cart {
         $halfStar.appendTo($rating);
         $rating.appendTo($desc);
         $desc.append($(`
-            <p class="drop-cart-count">
+            <p class="drop-cart-count">${product.quantity}
                 <span class="drop-cart-count-x">x</span>
                 <span class="beforePrice">${product.price}</span>
             </p>`));
