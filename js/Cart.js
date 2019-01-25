@@ -56,20 +56,38 @@ class Cart {
         let $rating = $('<p/>', {
             class: "gold-stars gold-stars_drop-cart header__gold-stars"
         });
-        let $fullStar = $('')
-        $img.appendTo($productLink);
-        $name.appendTo($desc);
+        let $fullStar = $('<i/>', {
+            class: "fas fa-star"
+        });
+        let $halfStar = $('<i/>', {
+            class: "fas fa-star-half-alt"
+        });
+        let $delBtn = $('<a/>', {
+            class: "del-button drop-cart__del-button",
+            href: "#"
+        });
 
+        $img.appendTo($productLink);
         $productLink.appendTo($container);
+        $name.appendTo($desc);
+        // rating
+        for (let i=1; i<5; i++) {
+            $fullStar.appendTo($rating);
+        }
+        $halfStar.appendTo($rating);
+        $rating.appendTo($desc);
+        $desc.append($(`
+            <p class="drop-cart-count">
+                <span class="drop-cart-count-x">x</span>
+                <span class="beforePrice">${product.price}</span>
+            </p>`));
+        $delBtn.append($('<i class="fas fa-times-circle"></i>'));
+        $delBtn.appendTo($desc);
         $desc.appendTo($container);
         $container.appendTo($('.cart-items-wrap'));
-
-        $container.append($(`<p class="product-quantity">${product.quantity}</p>`));
-        $container.append($(`<p class="product-price">${product.price} руб.</p>`));
     }
     _renderSum(){
-        $('.sum-goods').text(`Всего товаров в корзине: ${this.countGoods}`);
-        $('.sum-price').text(`Общая сумма: ${this.amount} руб.`);
+        $('.total-price').text(${this.amount});
     }
     _updateCart(product) {
         let $container = $(`div[data-product="${product.id_product}"]`);
