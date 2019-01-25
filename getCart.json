@@ -1,0 +1,26 @@
+{
+  "amount": 500,
+  "countGoods": 2,
+  "contents": [
+    {
+      "id_product": 120,
+      "product_name": "REBOX ZANE",
+      "product_img": "drop-cart-img1.jpg",
+      "product_alt": "Rebox Zane",
+      "width": 72,
+      "height": 85,
+      "price": 250,
+      "quantity": 1
+    },
+    {
+      "id_product": 121,
+      "product_name": "REBOX ZANE",
+      "product_img": "drop-cart-img1.jpg",
+      "product_alt": "Rebox Zane",
+      "width": 72,
+      "height": 85,
+      "price": 250,
+      "quantity": 1
+    }
+  ]
+}
