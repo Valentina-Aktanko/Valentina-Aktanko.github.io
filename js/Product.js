@@ -1,9 +1,11 @@
 class Product {
-    constructor(id, title, price, img = 'https://placehold.it/263x283', container = '.box-product') {
+    constructor(id, title, price, img = 'https://placehold.it/263x283', container = '.box-product', width = 72, height = 85) {
         this.id = id;
         this.title = title;
         this.price = price;
         this.img = img;
+        this.width = width;
+        this.height = height;
         this.container = container;
         this._render();
     }
@@ -42,7 +44,11 @@ class Product {
             text: 'Add to Cart',
             'data-id': this.id,
             'data-price': this.price,
-            'data-name': this.title
+            'data-name': this.title,
+            'data-img': this.img,
+            'data-width': this.width,
+            'data-height': this.height
+
         });
 
         // Создание структуры

@@ -64,8 +64,11 @@ class Cart {
             href: "product.html"
         });
         let $img = $('<img>', {
-            src: product.product_img,
-            alt: product.product_alt
+            src: product.img,
+            alt: product.alt,
+            width: product.width,
+            height: product.height
+
         });
         let $desc = $('<div/>', {
             class: "drop-cart-text"
@@ -128,7 +131,10 @@ class Cart {
                 id_product: productId,
                 product_name: $(element).data('name'),
                 price: +$(element).data('price'),
-                quantity: 1
+                quantity: 1,
+                img: $(element).data('img'),
+                width: $(element).data('width'),
+                heigth: $(element).data('height')
             };
             this.cartItems.push(product);
             this._renderItem(product);
