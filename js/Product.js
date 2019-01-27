@@ -4,8 +4,6 @@ class Product {
         this.title = title;
         this.price = price;
         this.img = img;
-        this.width = 72;
-        this.height = 85;
         this.container = container;
         this._render();
     }

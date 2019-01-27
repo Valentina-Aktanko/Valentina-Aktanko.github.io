@@ -27,7 +27,6 @@ class Cart {
         let $cartItemsDiv = $('<div/>', {
             class: "cart-items-wrap"
         });
-
         let $totalPriceWrap = $(`<p class="drop-cart-total">Total<span class="total-price"></span></p>`);
 
         let $checkoutLink = $('<a/>', {
@@ -35,13 +34,11 @@ class Cart {
             class: "button button_black drop-cart__button",
             text: "Checkout"
         });
-
         let $shoppingCartLink = $('<a/>', {
             href: "checkout.html",
             class: "button button_black drop-cart__button",
             text: "Go to cart"
         });
-
         $cartItemsDiv.appendTo($(this.container));
         $totalPriceWrap.appendTo($(this.container));
         $checkoutLink.appendTo($(this.container));
@@ -49,7 +46,6 @@ class Cart {
     }
 
     _renderItem(product) {
-
         let $container = $('<div/>', {
             class: 'drop-cart-item',
             'data-product': product.id_product
@@ -60,9 +56,8 @@ class Cart {
         let $img = $('<img>', {
             src: product.img,
             alt: product.alt,
-            width: product.width,
-            height: product.height
-
+            width: 72,
+            height: 85
         });
         let $desc = $('<div/>', {
             class: "drop-cart-text"
@@ -77,12 +72,6 @@ class Cart {
             width: 56,
             height: 12
         });
-        let $fullStar = $('<i/>', {
-            class: "fas fa-star"
-        });
-        let $halfStar = $('<i/>', {
-            class: "fas fa-star-half-alt"
-        });
         let $delBtn = $('<a/>', {
             class: "del-button drop-cart__del-button",
             href: "#"
@@ -91,17 +80,11 @@ class Cart {
         $img.appendTo($productLink);
         $productLink.appendTo($container);
         $name.appendTo($desc);
-        // rating
-        for (let i=1; i<5; i++) {
-            // $fullStar.appendTo($rating);
-            $rating.append($fullStar);
-        }
-        $halfStar.appendTo($rating);
         $rating.appendTo($desc);
         $desc.append($(`
-            <p class="drop-cart-count">${product.quantity}
-                <span class="drop-cart-count-x">x</span>
-                <span class="beforePrice">${product.price}</span>
+            <p class="drop-cart-quantity">${product.quantity}
+                <span class="drop-cart-x">x</span>
+                <span class="drop-cart-price">${product.price}</span>
             </p>`));
         $delBtn.append($('<i class="fas fa-times-circle"></i>'));
         $delBtn.appendTo($desc);
@@ -110,6 +93,9 @@ class Cart {
     }
     _renderSum(){
         $('.total-price').text(this.amount);
+        if (this.countGoods > 0) {
+            $('.cart-count').addClass('show').text(this.countGoods);
+        }
     }
     _updateCart(product) {
         let $container = $(`div[data-product="${product.id_product}"]`);
