@@ -1,22 +1,22 @@
 class Product {
-    constructor(id, title, price, img = 'https://placehold.it/263x283', container = '.box-product', width = 72, height = 85) {
+    constructor(id, title, price, img = 'https://placehold.it/263x283', container = '.box-product') {
         this.id = id;
         this.title = title;
         this.price = price;
         this.img = img;
-        this.width = width;
-        this.height = height;
+        this.width = 72;
+        this.height = 85;
         this.container = container;
         this._render();
     }
 
     _render() {
         let $wrapper = $('<div/>', {
-            class: 'item-product'
+            class: "item-product"
         });
         let $productLink = $('<a/>', {
-                href: "product.html",
-                class: "product-link"
+            href: "product.html",
+            class: "product-link"
         });
         let $img = $('<img/>', {
             src: this.img
@@ -29,7 +29,6 @@ class Product {
             text: this.title
         });
 
-        // let $price = $(`<p class='product-price beforePrice'>${this.price}</p>`);
         let $price = $('<p/>', {
             class: 'product-price beforePrice',
             text: this.price
@@ -40,14 +39,15 @@ class Product {
         });
 
         let $buyBtn = $('<a/>', {
-            class: 'add',
-            text: 'Add to Cart',
+            href: "#",
+            class: "add",
+            text: "Add to Cart",
             'data-id': this.id,
-            'data-price': this.price,
             'data-name': this.title,
+            'data-price': this.price,
             'data-img': this.img,
-            'data-width': this.width,
-            'data-height': this.height
+            'data-width': this.width, // убрать отсюда и захардкодить в кнопке
+            'data-height': this.height // убрать отсюда и захардкодить в кнопке
 
         });
 

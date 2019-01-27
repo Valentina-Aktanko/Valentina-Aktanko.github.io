@@ -242,6 +242,9 @@ body {
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 10px; }
+  .drop-cart-rating {
+    margin-bottom: 12px;
+  }
   .drop-cart-count {
     color: #f16d7f;
     font-size: 12px;
@@ -259,6 +262,9 @@ body {
     text-transform: uppercase;
     display: flex;
     justify-content: space-between; }
+  .total-price:before {
+    content: "$";
+  }
 
 .gold-stars {
   color: #e4af48;
@@ -530,8 +536,10 @@ body {
   width: 263px; }
 
 .add {
+  display: flex;
+  align-items: center;
   height: 39px;
-  line-height: 39px;
+  /*line-height: 39px;*/
   border: 1px solid #ffffff;
   padding-right: 14px;
   padding-left: 14px;
@@ -543,6 +551,11 @@ body {
 
 .add:hover {
   box-shadow: 0 0 8px #fff; }
+
+.add:before {
+  content: url("../img/cart-white.svg");
+  margin-right: 8px;
+}
 
 .box-product {
   display: flex;

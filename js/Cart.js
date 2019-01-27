@@ -2,9 +2,9 @@ class Cart {
     constructor(source, container = '#drop-cart') {
         this.source = source;
         this.container = container;
-        this.countGoods = 0; // Общее количество товаров в корзине
-        this.amount = 0; // Общая стоимость товаров в корзине
-        this.cartItems = []; // Все товары
+        this.countGoods = 0;
+        this.amount = 0;
+        this.cartItems = [];
         this._init();
     }
 
@@ -27,35 +27,29 @@ class Cart {
         let $cartItemsDiv = $('<div/>', {
             class: "cart-items-wrap"
         });
-        let $totalPriceWrap = $('<div/>', {
-            class: "drop-cart-total"
-        });
-        let $totalText = $('<p/>', {
-            class: "total-test",
-            text: "Total"
-        });
-        let $totalPrice = $('<p/>', {
-            class: "total-price",
-        });
+
+        let $totalPriceWrap = $(`<p class="drop-cart-total">Total<span class="total-price"></span></p>`);
+
         let $checkoutLink = $('<a/>', {
             href: "checkout.html",
             class: "button button_black drop-cart__button",
             text: "Checkout"
-
         });
+
         let $shoppingCartLink = $('<a/>', {
             href: "checkout.html",
             class: "button button_black drop-cart__button",
             text: "Go to cart"
         });
-        $totalText.appendTo($totalPriceWrap);
-        $totalPrice.appendTo($totalPriceWrap);
+
         $cartItemsDiv.appendTo($(this.container));
         $totalPriceWrap.appendTo($(this.container));
         $checkoutLink.appendTo($(this.container));
         $shoppingCartLink.appendTo($(this.container));
     }
+
     _renderItem(product) {
+
         let $container = $('<div/>', {
             class: 'drop-cart-item',
             'data-product': product.id_product
@@ -77,8 +71,11 @@ class Cart {
             class: "drop-cart-heading",
             text: product.product_name
         });
-        let $rating = $('<p/>', {
-            class: "gold-stars gold-stars_drop-cart header__gold-stars"
+        let $rating = $('<img/>', {
+            src: "img/starsRating.png",
+            class: "drop-cart-rating",
+            width: 56,
+            height: 12
         });
         let $fullStar = $('<i/>', {
             class: "fas fa-star"
@@ -134,7 +131,7 @@ class Cart {
                 quantity: 1,
                 img: $(element).data('img'),
                 width: $(element).data('width'),
-                heigth: $(element).data('height')
+                height: $(element).data('height')
             };
             this.cartItems.push(product);
             this._renderItem(product);

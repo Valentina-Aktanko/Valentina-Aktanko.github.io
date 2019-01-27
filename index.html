@@ -98,10 +98,7 @@
                             <!--</div>-->
                         <!--</div>-->
                     <!--</div>-->
-                    <!--<div class="drop-cart-total">-->
-                        <!--<p class="total-test">Total</p>-->
-                        <!--<p class="total-price">500.00</p>-->
-                    <!--</div>-->
+                    <!--<p class="drop-cart-total">Total<span class="total-price">500.00</span></p>-->
                     <!--<a href="checkout.html" class="button button_black drop-cart__button">Checkout</a>-->
                     <!--<a href="shopping-cart.html" class="button button_black drop-cart__button">Go to cart</a>-->
                 </div>
@@ -312,21 +309,28 @@
         </div>
     </div>
 </footer>
-
 <script src="js/jquery-3.3.1.js"></script>
 <script src="js/Product.js"></script>
 <script src="js/Cart.js"></script>
 <script>
     $(document).ready(() => {
         // Товары
-        let product1 = new Product(101, 'Mango People T-shirt', 52, 'img/prod-1.jpg');
-        let product2 = new Product(102, 'Mango People T-shirt', 52, 'img/prod-2.jpg');
-        let product3 = new Product(103, 'Mango People T-shirt', 52, 'img/prod-3.jpg');
-        let product4 = new Product(104, 'Mango People T-shirt', 52, 'img/prod-4.jpg');
-        let product5 = new Product(105, 'Mango People T-shirt', 52, 'img/prod-5.jpg');
-        let product6 = new Product(106, 'Mango People T-shirt', 52, 'img/prod-6.jpg');
-        let product7 = new Product(107, 'Mango People T-shirt', 52, 'img/prod-7.jpg');
-        let product8 = new Product(108, 'Mango People T-shirt', 52, 'img/prod-8.jpg');
+        fetch('products_index.json')
+            .then(result => result.json())
+            .then(data => {
+                for (let product of data) {
+                    new Product(product.id, product.name, product.price, product.img_path);
+                }
+            });
+
+        // let product1 = new Product(101, 'Mango People T-shirt', 52, 'img/prod-1.jpg');
+        // let product2 = new Product(102, 'Mango People T-shirt', 52, 'img/prod-2.jpg');
+        // let product3 = new Product(103, 'Mango People T-shirt', 52, 'img/prod-3.jpg');
+        // let product4 = new Product(104, 'Mango People T-shirt', 52, 'img/prod-4.jpg');
+        // let product5 = new Product(105, 'Mango People T-shirt', 52, 'img/prod-5.jpg');
+        // let product6 = new Product(106, 'Mango People T-shirt', 52, 'img/prod-6.jpg');
+        // let product7 = new Product(107, 'Mango People T-shirt', 52, 'img/prod-7.jpg');
+        // let product8 = new Product(108, 'Mango People T-shirt', 52, 'img/prod-8.jpg');
 
         // Корзина
 
