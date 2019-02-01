@@ -5,7 +5,7 @@
     {
       "id_product": 120,
       "product_name": "REBOX ZANE",
-      "img": "img/drop-cart-img1.jpg",
+      "imgSrc": "img/drop-cart-img1.jpg",
       "alt": "Rebox Zane",
       "width": 72,
       "height": 85,
@@ -15,7 +15,7 @@
     {
       "id_product": 121,
       "product_name": "REBOX ZANE",
-      "img": "img/drop-cart-img2.jpg",
+      "imgSrc": "img/drop-cart-img2.jpg",
       "alt": "Rebox Zane",
       "width": 72,
       "height": 85,

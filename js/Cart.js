@@ -1,5 +1,5 @@
-class Cart {
-    constructor(source, container = '#drop-cart') {
+class Cart{
+    constructor(source, container = '#drop-cart'){
         this.source = source;
         this.container = container;
         this.countGoods = 0;
@@ -7,8 +7,7 @@ class Cart {
         this.cartItems = [];
         this._init();
     }
-
-    _init() {
+    _init(){
         this._render();
         fetch(this.source)
             .then(result => result.json())
@@ -22,8 +21,7 @@ class Cart {
                 this._renderSum();
             })
     }
-
-    _render() {
+    _render(){
         let $cartItemsDiv = $('<div/>', {
             class: "cart-items-wrap"
         });
@@ -44,8 +42,7 @@ class Cart {
         $checkoutLink.appendTo($(this.container));
         $shoppingCartLink.appendTo($(this.container));
     }
-
-    _renderItem(product) {
+    _renderItem(product){
         let $container = $('<div/>', {
             class: 'drop-cart-item',
             'data-product': product.id_product
@@ -53,8 +50,8 @@ class Cart {
         let $productLink = $('<a/>', {
             href: "product.html"
         });
-        let $img = $('<img>', {
-            src: product.img,
+        let $img = $('<img/>', {
+            src: product.imgSrc,
             alt: product.alt,
             width: 72,
             height: 85

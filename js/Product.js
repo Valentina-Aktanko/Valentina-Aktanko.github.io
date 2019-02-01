@@ -1,9 +1,9 @@
 class Product {
-    constructor(id, title, price, img = 'https://placehold.it/263x283', container = '.box-product') {
+    constructor(id, title, price, imgSrc = 'https://placehold.it/263x283', container = '.box-product') {
         this.id = id;
         this.title = title;
         this.price = price;
-        this.img = img;
+        this.imgSrc = imgSrc;
         this.container = container;
         this._render();
     }
@@ -17,7 +17,7 @@ class Product {
             class: "product-link"
         });
         let $img = $('<img/>', {
-            src: this.img
+            src: this.imgSrc
         });
         let $desc = $('<div/>', {
             class: 'product-text'
@@ -43,9 +43,9 @@ class Product {
             'data-id': this.id,
             'data-name': this.title,
             'data-price': this.price,
-            'data-img': this.img,
-            'data-width': this.width, // убрать отсюда и захардкодить в кнопке
-            'data-height': this.height // убрать отсюда и захардкодить в кнопке
+            'data-img': this.imgSrc,
+            'data-width': 72,
+            'data-height': 85
 
         });
 

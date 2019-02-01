@@ -278,7 +278,7 @@
             .then(result => result.json())
             .then(data => {
                 for (let product of data) {
-                    new Product(product.id, product.name, product.price, product.img_path);
+                    new Product(product.id, product.name, product.price, product.imgSrc);
                 }
             });
 
