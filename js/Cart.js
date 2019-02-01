@@ -93,7 +93,7 @@ class Cart {
     }
     _renderSum(){
         $('.total-price').text(this.amount);
-        if (this.countGoods > 0) {
+        if (this.countGoods  > 0) {
             $('.cart-count').addClass('show').text(this.countGoods);
         }
     }
