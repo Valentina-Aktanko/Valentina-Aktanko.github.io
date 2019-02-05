@@ -70,7 +70,7 @@ class Cart{
             height: 12
         });
         let $delBtn = $('<a/>', {
-            class: "del-button drop-cart__del-button",
+            class: "del-button drop-cart-remove",
             href: "#"
         });
 
@@ -79,23 +79,36 @@ class Cart{
         $name.appendTo($desc);
         $rating.appendTo($desc);
         $desc.append($(`
-            <p class="drop-cart-quantity">${product.quantity}
-                <span class="drop-cart-x">x</span>
+            <p class="drop-cart-info">
+                <span class="drop-cart-quantity">${product.quantity}</span>
+                <span class="drop-cart-x">&times;</span>
                 <span class="drop-cart-price">${product.price}</span>
             </p>`));
-        $delBtn.append($('<i class="fas fa-times-circle"></i>'));
-        $delBtn.appendTo($desc);
+        $delBtn
+            .append($('<i class="fas fa-times-circle"></i>'))
+            .appendTo($desc)
+            .click(()=> {
+                this._remove(product.id_product);
+            });
         $desc.appendTo($container);
         $container.appendTo($('.cart-items-wrap'));
     }
     _renderSum(){
         $('.total-price').text(this.amount);
         if (this.countGoods  > 0) {
-            $('.cart-count').addClass('show').text(this.countGoods);
+            $('.cart-count')
+                .removeClass('hidden')
+                .addClass('show')
+                .text(this.countGoods);
+        } else {
+            $('.cart-count')
+                .removeClass('show')
+                .addClass('hidden');
         }
     }
     _updateCart(product) {
         let $container = $(`div[data-product="${product.id_product}"]`);
+        $container.find('.drop-cart-quantity').text(product.quantity);
         $container.find('.total-price').text($(product.quantity*product.price));
     }
     addProduct(element) {
@@ -112,9 +125,9 @@ class Cart{
                 product_name: $(element).data('name'),
                 price: +$(element).data('price'),
                 quantity: 1,
-                img: $(element).data('img'),
-                width: $(element).data('width'),
-                height: $(element).data('height')
+                imgSrc: $(element).data('imgsrc'),
+                width: 72,
+                height: 85
             };
             this.cartItems.push(product);
             this._renderItem(product);
@@ -124,6 +137,17 @@ class Cart{
         this._renderSum();
     }
     _remove(id) {
-        // TODO: Удаление товара
+        let find = this.cartItems.find(product => product.id_product === id);
+        if(find.quantity > 1){
+            find.quantity--;
+            this._updateCart(find);
+        } else {
+            this.cartItems.splice(this.cartItems.indexOf(find), 1);
+            $(`div[data-product="${id}"]`).remove();
+        }
+        this.countGoods--;
+        this.amount-= find.price;
+        this._renderSum();
     }
+
 }

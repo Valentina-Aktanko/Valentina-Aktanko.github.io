@@ -43,10 +43,7 @@ class Product {
             'data-id': this.id,
             'data-name': this.title,
             'data-price': this.price,
-            'data-img': this.imgSrc,
-            'data-width': 72,
-            'data-height': 85
-
+            'data-imgSrc': this.imgSrc
         });
 
         // Создание структуры

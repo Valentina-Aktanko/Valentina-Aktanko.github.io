@@ -68,7 +68,7 @@ body {
   .del-button:hover {
     color: #f16d7f; }
 
-.drop-cart__del-button {
+.drop-cart-remove {
   position: absolute;
   right: 0;
   top: 33px; }
@@ -261,7 +261,7 @@ body {
   .drop-cart-rating {
     margin-bottom: 12px;
   }
-  .drop-cart-quantity {
+  .drop-cart-info {
     color: #f16d7f;
     font-size: 12px;
     text-transform: uppercase;

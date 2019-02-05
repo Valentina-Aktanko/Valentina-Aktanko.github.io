@@ -1301,4 +1301,11 @@ body {
       margin-left: 20px;
       color: #f16d7f; }
 
+.show {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
 /*# sourceMappingURL=style-sass.css.map */

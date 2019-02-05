@@ -58,7 +58,7 @@
                 <a class="cart-link" href="shopping-cart.html">
                     <img class="cart-img" src="img/cart.svg" alt="cart" width="32" height="29">
                 </a>
-                <div class="cart-count"></div>
+                <div class="cart-count hidden"></div>
                 <div class="drop-cart" id="drop-cart">
                 </div>
             </div>
@@ -273,6 +273,7 @@
 <script src="js/Cart.js"></script>
 <script>
     $(document).ready(() => {
+
         // Товары
         fetch('products_index.json')
             .then(result => result.json())
@@ -281,7 +282,6 @@
                     new Product(product.id, product.name, product.price, product.imgSrc);
                 }
             });
-
         // let product1 = new Product(101, 'Mango People T-shirt', 52, 'img/prod-1.jpg');
         // let product2 = new Product(102, 'Mango People T-shirt', 52, 'img/prod-2.jpg');
         // let product3 = new Product(103, 'Mango People T-shirt', 52, 'img/prod-3.jpg');
@@ -292,12 +292,10 @@
         // let product8 = new Product(108, 'Mango People T-shirt', 52, 'img/prod-8.jpg');
 
         // Корзина
-
         let cart = new Cart('getCart.json');
-
-        // Добавление товара
-        $('.add').click(e => {
-            cart.addProduct(e.target);
+        // Событие добавления товара
+        $('.box-product').on('click', '.add', (e) => {
+            cart.addProduct(e.currentTarget);
         });
     });
 </script>
